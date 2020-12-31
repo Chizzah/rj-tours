@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from "react";
+import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 
@@ -19,9 +20,11 @@ const PricingPage = ({ data }) => {
 							<p className="mb-4 text-base leading-relaxed">
 								Child (7 - 12 years) <span className="font-semibold">R320</span>
 							</p>
-							<button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-green-500 hover:from-green-500 to-green-400 hover:to-green-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
-								Book Now
-							</button>
+							<Link to="/contact">
+								<button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-green-500 hover:from-green-500 to-green-400 hover:to-green-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
+									Book Now
+								</button>
+							</Link>
 						</div>
 						<div className="px-8 py-6 mx-auto lg:px-20 lg:w-1/3 md:w-full">
 							<h2 className="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">
@@ -33,9 +36,11 @@ const PricingPage = ({ data }) => {
 							<p className="mb-4 text-base leading-relaxed">
 								Child (7 - 12 years) <span className="font-semibold">R280</span>
 							</p>
-							<button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-green-500 hover:from-green-500 to-green-400 hover:to-green-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
-								Book Now
-							</button>
+							<Link to="/contact">
+								<button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-green-500 hover:from-green-500 to-green-400 hover:to-green-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
+									Book Now
+								</button>
+							</Link>
 						</div>
 						<div className="px-8 py-6 mx-auto lg:px-20 lg:w-1/3 md:w-full">
 							<h2 className="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">
@@ -47,9 +52,11 @@ const PricingPage = ({ data }) => {
 							<p className="mb-4 text-base leading-relaxed">
 								Child (7 - 12 years) <span className="font-semibold">R580</span>
 							</p>
-							<button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-green-500 hover:from-green-500 to-green-400 hover:to-green-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
-								Book Now
-							</button>
+							<Link to="/contact">
+								<button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-green-500 hover:from-green-500 to-green-400 hover:to-green-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
+									Book Now
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>

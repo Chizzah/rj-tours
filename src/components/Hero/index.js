@@ -14,7 +14,7 @@ const HeroSection = (props) => {
 						{props.title}
 					</h1>
 					<h2 className="md:mb-8 md:text-lg">{props.subtitle}</h2>
-					<Link>
+					<Link to="/activities">
 						<button className="inline-flex items-center px-5 py-2 mt-4 text-xl font-semibold text-gray-100 capitalize bg-green-500 border-0 rounded focus:outline-none hover:bg-green-400 md:mt-0">
 							{props.button}
 						</button>

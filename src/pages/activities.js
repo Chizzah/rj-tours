@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 
 import Layout from "../components/layout";
@@ -22,9 +22,11 @@ const ActivitiesPage = ({ data }) => {
 							Come and share the space with the locals
 						</h1>
 						<div className="flex justify-center">
-							<button className="inline-flex px-6 py-2 text-lg text-white bg-blue-400 border-0 rounded focus:outline-none hover:bg-blue-300">
-								Book Now
-							</button>
+							<Link to="/contact">
+								<button className="inline-flex px-6 py-2 text-lg text-white bg-blue-400 border-0 rounded focus:outline-none hover:bg-blue-300">
+									Book Now
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>

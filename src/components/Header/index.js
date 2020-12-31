@@ -53,9 +53,11 @@ const Header = () => {
 					<img className="w-16" src={Logo} />
 				</Link>
 				<div className="inline-flex ml-5 lg:w-2/5 lg:justify-end lg:ml-0">
-					<button className="inline-flex items-center px-5 py-2 mt-4 text-base font-semibold text-gray-100 capitalize bg-green-300 border-0 rounded focus:outline-none hover:bg-green-400 md:mt-0">
-						Book Now
-					</button>
+					<Link to="/contact">
+						<button className="inline-flex items-center px-5 py-2 mt-4 text-base font-semibold text-gray-100 capitalize bg-green-300 border-0 rounded focus:outline-none hover:bg-green-400 md:mt-0">
+							Book Now
+						</button>
+					</Link>
 				</div>
 			</div>
 		</header>
