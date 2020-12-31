@@ -1,6 +1,6 @@
 .BG-1 {
 	width: 100%;
-	height: 100vh;
+	height: 50vh;
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -23,9 +23,19 @@
 }
 
 .black-overlay-1 {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .black-overlay-2 {
 	background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 1280px) {
+	.BG-1 {
+		width: 100%;
+		height: 90vh;
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+	}
 }

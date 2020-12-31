@@ -11,3 +11,13 @@
 .blue-backdrop {
 	background-color: rgba(99, 179, 237, 0.75);
 }
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site-content {
+	flex-grow: 1;
+}

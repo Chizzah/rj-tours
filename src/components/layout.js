@@ -7,11 +7,13 @@ import Header from "./Header";
 
 const Layout = ({ children }) => {
 	return (
-		<div classNameName="flex flex-col min-h-screen font-sans text-gray-900">
-			<Header />
-			<main>{children}</main>
-			<Footer />
-		</div>
+		<>
+			<div className="site">
+				<Header />
+				<main className="site-content">{children}</main>
+				<Footer />
+			</div>
+		</>
 	);
 };
 

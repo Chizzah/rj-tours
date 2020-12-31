@@ -8,9 +8,9 @@ import "../../css/hero.css";
 const HeroSection = (props) => {
 	return (
 		<BackgroundImage className="BG-1" fluid={props.image}>
-			<section className="flex flex-col items-end justify-start h-full text-gray-100 bg-gray-900 black-overlay-1">
-				<div className="text-left md:mr-20 md:mt-20 md:max-w-md">
-					<h1 className="font-semibold capitalize md:mt-32 md:mb-4 md:text-4xl">
+			<section className="flex flex-col items-center justify-center h-full text-gray-100 bg-gray-900 xl:items-end xl:justify-start black-overlay-1">
+				<div className="mx-4 text-left md:mr-20 md:mt-20 md:max-w-md">
+					<h1 className="font-semibold capitalize xl:mt-32 md:mb-4 md:text-4xl">
 						{props.title}
 					</h1>
 					<h2 className="md:mb-8 md:text-lg">{props.subtitle}</h2>
