@@ -1,68 +1,73 @@
 /* eslint-disable */
 import React from "react";
-import { Link } from "gatsby";
 
 import Layout from "../components/layout";
+import PricingCard from "../components/PricingCard/PricingCard";
 
-const PricingPage = ({ data }) => {
-	return (
-		<Layout>
-			<section className="py-24 text-gray-700 body-font">
-				<div className="container px-8 mx-auto lg:px-4">
-					<div className="flex flex-wrap text-center">
-						<div className="px-8 py-6 mx-auto lg:px-20 lg:w-1/3 md:w-full">
-							<h2 className="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">
-								Person
-							</h2>
-							<p className="mb-4 text-base leading-relaxed">
-								Adult <span className="font-semibold">R550</span>
-							</p>
-							<p className="mb-4 text-base leading-relaxed">
-								Child (7 - 12 years) <span className="font-semibold">R320</span>
-							</p>
-							<Link to="/contact">
-								<button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-green-500 hover:from-green-500 to-green-400 hover:to-green-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
-									Book Now
-								</button>
-							</Link>
-						</div>
-						<div className="px-8 py-6 mx-auto lg:px-20 lg:w-1/3 md:w-full">
-							<h2 className="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">
-								Group
-							</h2>
-							<p className="mb-4 text-base leading-relaxed">
-								Adult <span className="font-semibold">R450</span>
-							</p>
-							<p className="mb-4 text-base leading-relaxed">
-								Child (7 - 12 years) <span className="font-semibold">R280</span>
-							</p>
-							<Link to="/contact">
-								<button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-green-500 hover:from-green-500 to-green-400 hover:to-green-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
-									Book Now
-								</button>
-							</Link>
-						</div>
-						<div className="px-8 py-6 mx-auto lg:px-20 lg:w-1/3 md:w-full">
-							<h2 className="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">
-								Private Tour
-							</h2>
-							<p className="mb-4 text-base leading-relaxed">
-								Adult <span className="font-semibold">R1150</span>
-							</p>
-							<p className="mb-4 text-base leading-relaxed">
-								Child (7 - 12 years) <span className="font-semibold">R580</span>
-							</p>
-							<Link to="/contact">
-								<button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-green-500 hover:from-green-500 to-green-400 hover:to-green-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
-									Book Now
-								</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-			</section>
-		</Layout>
-	);
+const PricingPage = () => {
+  return (
+    <Layout>
+      <section className="max-w-6xl py-12 mx-auto text-gray-700 body-font">
+        <div className="mx-2 mb-4 text-xl font-semibold uppercase md:mx-0 md:mb-8 md:text-2xl">
+          <h2>Pricing</h2>
+        </div>
+        <div className="container flex flex-col items-center py-12 mx-auto mb-8 md:flex-row md:justify-around pricing-bg">
+          <PricingCard heading="Person" adult="R500" child="R320" />
+          <PricingCard heading="Group" adult="R450" child="R280" />
+          <PricingCard
+            heading="Private Tour"
+            private="Private Tours @ 1 - 6 max"
+            adult="R1150"
+            child="R580"
+          />
+        </div>
+        <div>
+          <h2 className="mx-2 my-4 text-xl font-semibold uppercase md:mx-0 md:mb-8 md:text-2xl">
+            Additional Information
+          </h2>
+        </div>
+        <div className="container flex justify-center py-12 mx-auto pricing-bg">
+          <div className="w-11/12 py-24 my-8 duration-300 ease-in-out transform bg-white rounded shadow-lg cursor-pointer md:py-0">
+            <div className="mx-4 my-8 md:ml-4 md:mt-4">
+              <h3 className="my-4 font-semibold uppercase md:mb-8 md:text-lg">
+                Duration & Time Slots
+              </h3>
+              <p className="mb-2">
+                <strong>Tour Duration:</strong> 2h30
+              </p>
+              <p className="mb-2">
+                <strong>Summer Time Slots (Sep - Apr):</strong> 08:00 - 10:30 &
+                11:00 - 13:30
+              </p>
+              <p className="mb-8">
+                <strong>Winter Time Slots (May - Aug):</strong> 08:00 - 10:30 &
+                11:00 - 13:30
+              </p>
+            </div>
+            <div className="mx-4 md:ml-4 md:mt-4">
+              <h3 className="my-4 mb-8 font-semibold uppercase md:text-lg">
+                Saturday & Sunday Tours
+              </h3>
+              <p className="mb-2">
+                <strong>Tour Discount:</strong> 15%
+              </p>
+              <p className="mb-2">
+                <strong>Tour Duration:</strong> 1h30
+              </p>
+              <p className="mb-2">
+                <strong>Summer Time Slots (Sep - Apr):</strong> 09:00 - 10:30 &
+                11:00 - 12:30
+              </p>
+              <p className="mb-8">
+                <strong>Winter Time Slots (May - Aug):</strong> 09:00 - 10:30 &
+                11:00 - 12:30
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
 };
 
 export default PricingPage;
