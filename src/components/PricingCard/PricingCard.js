@@ -4,8 +4,8 @@ import { Link } from "gatsby";
 
 const PricingCard = (props) => {
   return (
-    <div className="flex flex-col items-center justify-center w-10/12 my-8 duration-300 ease-in-out transform bg-white rounded shadow-lg cursor-pointer h-72 hover:scale-105 md:w-72">
-      <div className="flex flex-col items-center justify-around md:justify-around md:w-56 md:h-72">
+    <div className="flex flex-col items-center justify-center w-10/12 my-8 duration-300 ease-in-out transform bg-white border border-gray-900 rounded-lg shadow-lg cursor-pointer h-96 hover:scale-105 md:w-64">
+      <div className="flex flex-col items-center justify-around md:justify-around md:w-64 md:h-96">
         <h2 className="text-xl font-semibold text-center uppercase">
           {props.heading}
           <br />
