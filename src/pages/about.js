@@ -8,8 +8,19 @@ import Layout from "../components/layout";
 const AboutPage = ({ data }) => {
   return (
     <Layout>
+      {/* HERO SECTION */}
+
+      <section className="flex flex-col items-center justify-center w-full text-gray-200 about-bg">
+        <h1 className="text-lg font-light text-center uppercase lg:text-2xl">
+          About
+        </h1>
+        <p className="text-2xl font-bold text-center capitalize lg:text-5xl">
+          We love our community <br /> and can't wait for you to meet
+        </p>
+      </section>
+
       <section>
-        <div className="max-w-3xl px-4 py-12 mx-auto">
+        <div className="max-w-3xl px-4 py-16 mx-auto lg:py-32">
           <h1 className="mb-4 font-semibold uppercase md:text-4xl">
             About RJ Tours
           </h1>

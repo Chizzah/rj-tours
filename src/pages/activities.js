@@ -13,12 +13,12 @@ const ActivitiesPage = ({ data }) => {
       {/* HERO SECTION */}
 
       <section className="flex flex-col items-center justify-center w-full text-gray-200 activities-bg">
-        <p className="text-lg font-semibold text-center lg:text-2xl">
+        <h1 className="text-lg font-light text-center uppercase lg:text-2xl">
           Activities
-        </p>
-        <h1 className="text-xl font-bold text-center uppercase lg:text-4xl">
-          Meet the amazing <br /> people in our communities
         </h1>
+        <p className="text-2xl font-bold text-center capitalize lg:text-5xl">
+          Meet the amazing <br /> people in our communities
+        </p>
       </section>
 
       {/* CONTENT SECTION */}

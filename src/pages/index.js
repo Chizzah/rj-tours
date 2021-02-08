@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 
 import LeftToRight from "../components/Animations/LeftToRight";
@@ -8,12 +8,43 @@ import RightToLeft from "../components/Animations/RightToLeft";
 
 import Layout from "../components/layout";
 
+import HeroImg from "../../static/hero-image.jpg";
 import testimonialOne from "../../static/testimonial-1.jpg";
 import testimonialTwo from "../../static/testimonial-2.jpg";
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+      {/* HERO SECTION */}
+
+      <section class="text-gray-700 body-font home-bg">
+        <div class="container flex flex-col items-center px-5 py-24 mx-auto lg:px-20 lg:py-48 md:flex-row">
+          <div class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:mr-20 md:items-start md:text-left md:mb-0 lg:text-center">
+            <h1 class="mb-8 text-2xl font-bold tracking-tighter capitalize text-center text-blue-800 lg:text-left lg:text-4xl title-font">
+              Enrich the experience
+            </h1>
+            <p class="mb-8 text-lg leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
+              RJ Tours, the operational sole trader located in the heart of the
+              Klein Karoo. A local socially responsible Footprint Tour,
+              providing guests the opportunity to meet and interact with the
+              local community from an inspirational footprint tour.
+            </p>
+            <div class="flex justify-center">
+              <button class="flex items-center px-4 py-2 mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
+                Book Now
+              </button>
+            </div>
+          </div>
+          <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
+            <img
+              class="object-cover object-center rounded-lg "
+              alt="hero"
+              src={HeroImg}
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 text-center text-gray-100 bg-green-400">
         <div className="md:mx-auto md:max-w-4xl">
           <div className="md:mt-8 md:mb-8">
@@ -63,7 +94,10 @@ const IndexPage = ({ data }) => {
                   with creating a better lifestyle and introducing change to the
                   world.
                 </p>
-                <a className="inline-flex items-center mt-3 text-blue-400">
+                <Link
+                  to="/activities"
+                  className="inline-flex items-center mt-3 text-blue-400"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -76,7 +110,7 @@ const IndexPage = ({ data }) => {
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </RightToLeft>
@@ -95,7 +129,10 @@ const IndexPage = ({ data }) => {
                   miss, where generations clings to the fact that storms may
                   come but that is where they belong.
                 </p>
-                <a className="inline-flex items-center mt-3 text-blue-400">
+                <Link
+                  to="/activities"
+                  className="inline-flex items-center mt-3 text-blue-400"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -108,7 +145,7 @@ const IndexPage = ({ data }) => {
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </Link>
               </div>
               <div className="inline-flex items-center justify-center flex-shrink-0 order-first w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:order-none sm:h-32 sm:ml-10">
                 <Img
@@ -137,7 +174,10 @@ const IndexPage = ({ data }) => {
                   be able to spread their wings abroad. Together we can feel
                   free and enjoy our locally prepared refreshments.
                 </p>
-                <a className="inline-flex items-center mt-3 text-blue-400">
+                <Link
+                  to="/activities"
+                  className="inline-flex items-center mt-3 text-blue-400"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -150,7 +190,7 @@ const IndexPage = ({ data }) => {
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </RightToLeft>
@@ -169,7 +209,10 @@ const IndexPage = ({ data }) => {
                   instilling the importance of its value in our
                   society/community.
                 </p>
-                <a className="inline-flex items-center mt-3 text-blue-400">
+                <Link
+                  to="/activities"
+                  className="inline-flex items-center mt-3 text-blue-400"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -182,7 +225,7 @@ const IndexPage = ({ data }) => {
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </Link>
               </div>
               <div className="inline-flex items-center justify-center flex-shrink-0 order-first w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:order-none sm:h-32 sm:ml-10">
                 <Img
