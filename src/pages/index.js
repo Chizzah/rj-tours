@@ -8,7 +8,6 @@ import RightToLeft from "../components/Animations/RightToLeft";
 
 import Layout from "../components/layout";
 
-import HeroImg from "../../static/hero-image.jpg";
 import testimonialOne from "../../static/testimonial-1.jpg";
 import testimonialTwo from "../../static/testimonial-2.jpg";
 
@@ -17,32 +16,28 @@ const IndexPage = ({ data }) => {
     <Layout>
       {/* HERO SECTION */}
 
-      <section class="text-gray-700 body-font home-bg">
-        <div class="container flex flex-col items-center px-5 py-24 mx-auto lg:px-20 lg:py-48 md:flex-row">
-          <div class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 lg:mr-20 md:items-start md:text-left md:mb-0 lg:text-center">
-            <h1 class="mb-8 text-2xl font-bold tracking-tighter capitalize text-center text-blue-800 lg:text-left lg:text-4xl title-font">
+      <section className="text-gray-700 body-font home-bg">
+        <div className="container px-8 py-48 mx-auto lg:px-4">
+          <div className="flex flex-col w-full mb-12 text-left lg:text-center">
+            <h2 className="mb-1 text-sm font-semibold tracking-widest text-blue-600 uppercase title-font">
               Enrich the experience
+            </h2>
+            <h1 className="mb-6 text-2xl font-semibold tracking-tighter text-gray-100 uppercase sm:text-4xl title-font">
+              Community tours <br className="md:hidden" /> in Oudtshoorn.
             </h1>
-            <p class="mb-8 text-lg leading-relaxed text-center text-gray-700 lg:text-left lg:text-1xl">
+            <p className="mx-auto text-base font-medium leading-relaxed text-gray-300 lg:w-2/3">
               RJ Tours, the operational sole trader located in the heart of the
               Klein Karoo. A local socially responsible Footprint Tour,
               providing guests the opportunity to meet and interact with the
               local community from an inspirational footprint tour.
             </p>
-            <div class="flex justify-center">
-              <Link to="/contact">
-                <button class="flex items-center px-4 py-2 mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
-                  Book Now
-                </button>
-              </Link>
-            </div>
           </div>
-          <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
-            <img
-              class="object-cover object-center rounded-lg "
-              alt="hero"
-              src={HeroImg}
-            />
+          <div className="flex lg:justify-center">
+            <Link to="/contact">
+              <button className="flex items-center px-6 py-3 mt-auto text-lg font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
+                Book Now
+              </button>
+            </Link>
           </div>
         </div>
       </section>
