@@ -91,9 +91,30 @@ const PricingPage = () => {
       <section className="text-gray-700 body-font">
         <div className="container px-8 pt-32 mx-auto lg:px-4">
           <h2 className="mb-4 font-semibold text-blue-400 uppercase md:mb-8 md:text-2xl">
+            Monday to Friday Tours
+          </h2>
+          <p className="mb-2 text-sm md:mb-4">
+            <i>2 hours and 30 minutes of wonderful and exciting experiences.</i>
+          </p>
+          <p className="mb-2 md:mb-4 lg:w-1/2">
+            <strong>REQUIREMENTS:</strong> Comfortable clothes, sneakers or
+            closed shoes, a hat, sunblock, rain coat if its cold….and don’t
+            forget your camera to capture the iconic memorable moments.
+          </p>
+          <p className="mb-2 md:mb-4">
+            <strong>Summer Times Slots:</strong> 08:00/10:30 & 11:00/13:30
+          </p>
+          <p className="mb-2 md:mb-4">
+            <strong>Winter Time Slots:</strong> 09:00/11:30 & 12:00/14:30
+          </p>
+        </div>
+        <div className="container px-8 pt-16 mx-auto lg:px-4">
+          <h2 className="mb-4 font-semibold text-blue-400 uppercase md:mb-8 md:text-2xl">
             Saturday Tours
           </h2>
-          <p className="mb-2 md:mb-4">Only 1 hour and 30 minutes</p>
+          <p className="mb-2 text-sm md:mb-4">
+            <i>Only 1 hour and 30 minutes</i>
+          </p>
           <p className="mb-2 md:mb-4">
             Suikerbult & Recycling @ less 15% discount
           </p>

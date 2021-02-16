@@ -27,25 +27,26 @@ const AboutPage = () => {
           </h1>
           <p className="mb-4">
             Roydin John Engelbrecht is responsible for every aspect of your
-            experience with RJ.Tours is pleasing.He have been a guide for 7
+            experience with RJ.Tours is pleasing. He has been a guide for 7
             years and worked at a Game lodge and wildelife ranger.
           </p>
 
           <p className="mb-4">
-            RJ.Tours was established in 2019 but it all stared wen he was just
-            13 years old and saw a groep of toerst in his area.This is where the
-            hunger that burned inside of him pushed him to think about starting
-            his own business.RJ.Tours is located in the Oudtshoorn area and
-            toerst will get a change meet the locals and interact with
-            them(local creche,recycling project,local community,furture leaders)
+            RJ Tours was established in 2019 but it all started when he was just
+            13 years old and saw a group of tourists in his area. This is where
+            the hunger that burned inside of him pushed him to think about
+            starting his own business. RJ tours is located in the Oudtshoorn
+            area and tourists will get the opportunity to meet the locals (local
+            creche, recycling project, local community, furture leaders) and
+            interact with them.
           </p>
 
           <p className="mb-4">
             He is passionate about getting to share his experience and
-            everything Oudtshoorn has to offer ,and am quite exicted to leave a
-            footprint.His main objective in his business plan,to introuduce
-            tourist to a whole new side of Oudtshoorn area,and with RJ.Tours he
-            would really like to do that his slogan of his business says
+            everything Oudtshoorn has to offer ,and is quite excited to leave a
+            footprint. His main objective in his business plan is to introduce
+            tourists to a whole new side of Oudtshoorn area, and with RJ Tours
+            he would really like to do that. The slogan of his business says
             "RJ.Tours -Oudsthoorn Flo...let's Go!!! Giving tourists a chance to
             see Oudtshoorn in a whole different way,but also learn and educate
             the forthcoming generation.

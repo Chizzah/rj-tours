@@ -15,14 +15,14 @@ const IndexPage = () => {
 
       <section className="text-gray-700 body-font home-bg">
         <div className="container px-8 py-48 mx-auto lg:px-4">
-          <div className="flex flex-col w-full mb-12 text-left lg:text-center">
-            <h2 className="mb-1 text-sm font-semibold tracking-widest text-blue-600 uppercase title-font">
+          <div className="flex flex-col w-full mb-12 text-left lg:text-center lg:mt-24">
+            <h2 className="mb-1 text-sm font-bold tracking-widest text-gray-100 uppercase title-font">
               Enrich the experience
             </h2>
             <h1 className="mb-6 text-2xl font-semibold tracking-tighter text-gray-100 uppercase sm:text-4xl title-font">
               Community tours <br className="md:hidden" /> in Oudtshoorn.
             </h1>
-            <p className="mx-auto text-base font-medium leading-relaxed text-gray-300 lg:w-2/3">
+            <p className="mx-auto text-base font-medium leading-relaxed text-gray-100 lg:text-lg lg:w-2/3">
               RJ Tours, the operational sole trader located in the heart of the
               Klein Karoo. A local socially responsible Footprint Tour,
               providing guests the opportunity to meet and interact with the
@@ -67,7 +67,7 @@ const IndexPage = () => {
 
       {/* FEATURES */}
 
-      <section className="text-gray-700 bg-gray-100 body-font">
+      <section className="overflow-hidden text-gray-700 bg-gray-100 body-font">
         <div className="container px-5 py-24 mx-auto">
           <h2 className="mb-8 font-semibold text-center text-blue-400 uppercase md:mb-16 md:text-2xl">
             Highlights of the tour

@@ -51,16 +51,15 @@ const ActivitiesPage = () => {
                   they can play on.
                 </p>
                 <p className="mx-8 my-4 text-xs lg:mx-4 lg:my-2 xl:text-base">
-                  These lacks does have an impact on many of our kids and
-                  parents that doesn’t want go send their kids to school.
-                  Security is also a huge problem in that hinders us to grow
-                  within our community.
+                  These lacks have an impact on many of our kids and parents
+                  that really want to send their kids to school. Security is
+                  also a huge problem and it hinders growth within our
+                  community.
                 </p>
                 <p className="mx-8 my-4 text-xs lg:mx-4 lg:my-2 xl:text-base">
-                  There is still a lot of work that needs to be done when it
-                  comes to the structure of the creche and the a lot of safety
-                  structures and policies needs to put in place in order for the
-                  care he to function fully, but all in all these lacks doesn’t
+                  There is still a lot to be done to the structure and safety
+                  concerning the crèche. Safety policies need to be put in place
+                  in order for the crèche to function fully. This does not
                   prohibit them from learning a third language like ISIXHOSA.
                 </p>
               </div>
@@ -109,7 +108,7 @@ const ActivitiesPage = () => {
                   you through the whole process of this and he currently only
                   recycles 2% of Oudtshoorn’s waste and this is an under
                   achievement for him that is why HE WORKS EVERYDAY TO BETTER
-                  HIS PASSION TO TURN IT INTO 1 OF THE GREATEST RECGCLING
+                  HIS PASSION TO TURN IT INTO 1 OF THE GREATEST RECYCLING
                   PROJECTS IN THE WHOLE OF OUDTSHOORN.
                 </p>
               </div>
