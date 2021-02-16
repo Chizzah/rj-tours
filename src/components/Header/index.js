@@ -37,7 +37,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="mx-2 text-gray-900 uppercase md:mr-8 hover:text-green-400 hover:font-semibold"
-                    href={item.link}
+                    to={item.link}
                   >
                     {item.name}
                   </Link>

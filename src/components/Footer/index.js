@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from "react";
+import { Link } from "gatsby";
 
 import Logo from "../../../static/logo/rj-tours-logo.png";
 
@@ -8,9 +9,12 @@ const Footer = () => {
     <footer className="text-gray-900 border-t border-gray-300 border-solid body-font">
       <div className="bg-gray-100">
         <div className="container flex flex-col items-center px-5 py-6 mx-auto sm:flex-row">
-          <a className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start">
+          <Link
+            to="/"
+            className="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start"
+          >
             <img className="w-16" src={Logo} />
-          </a>
+          </Link>
           <p className="mt-4 text-sm sm:ml-6 sm:mt-0">
             Copyright © RJ Tours 2020 | All rights reserved.
           </p>
