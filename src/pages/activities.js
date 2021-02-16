@@ -1,36 +1,36 @@
 /* eslint-disable */
-import React from "react";
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 import FadeIntoView from "../components/Animations/FadeIntoView";
 
 import Layout from "../components/layout";
 
-const ActivitiesPage = ({ data }) => {
+const ActivitiesPage = () => {
   return (
     <Layout>
-      {/* HERO SECTION */}
+      {/* HERO */}
 
       <section className="flex flex-col items-center justify-center w-full text-gray-200 activities-bg">
         <h1 className="text-lg font-light text-center uppercase lg:text-2xl">
           Activities
         </h1>
         <p className="text-2xl font-bold text-center capitalize lg:text-5xl">
-          Meet the amazing <br /> people in our communities
+          Meet our <br /> amazing community
         </p>
       </section>
 
-      {/* CONTENT SECTION */}
+      {/* CONTENT */}
 
       <section className="py-24 xl:py-48">
         {/* NOMONDE CRECHE */}
+
         <FadeIntoView>
           <div className="flex flex-col items-center justify-center text-gray-100 bg-green-500 lg:py-0 lg:flex-row">
             <div className="w-full lg:w-4/6">
-              <Img
+              <StaticImage
                 className="object-cover"
-                fluid={data.crech.childImageSharp.fluid}
+                src="../images/creche-activities.jpg"
+                alt="Nomonde Creche"
               />
             </div>
             <div className="w-full lg:w-2/6">
@@ -70,9 +70,10 @@ const ActivitiesPage = ({ data }) => {
         <FadeIntoView>
           <div className="flex flex-col items-center justify-center lg:py-0 lg:flex-row">
             <div className="w-full lg:order-2 lg:w-4/6">
-              <Img
+              <StaticImage
                 className="object-cover"
-                fluid={data.recycle.childImageSharp.fluid}
+                src="../images/recycle-activities.jpg"
+                alt="Rassouw Recycling"
               />
             </div>
             <div className="w-full lg:order-1 lg:w-2/6">
@@ -112,12 +113,14 @@ const ActivitiesPage = ({ data }) => {
         </FadeIntoView>
 
         {/* AURIAL COLLEGE */}
+
         <FadeIntoView>
           <div className="flex flex-col items-center justify-center bg-gray-300 lg:py-0 lg:flex-row">
             <div className="w-full lg:w-4/6">
-              <Img
+              <StaticImage
                 className="object-cover"
-                fluid={data.aurial.childImageSharp.fluid}
+                src="../images/aurial-activities.jpg"
+                alt="Aurial College"
               />
             </div>
             <div className="w-full lg:w-2/6">
@@ -162,12 +165,14 @@ const ActivitiesPage = ({ data }) => {
         </FadeIntoView>
 
         {/* SUIKERBUILT ONVERWACHT */}
+
         <FadeIntoView>
           <div className="flex flex-col items-center justify-center text-gray-100 bg-blue-400 lg:py-0 lg:flex-row">
             <div className="w-full lg:order-2 lg:w-4/6">
-              <Img
+              <StaticImage
                 className="object-cover"
-                fluid={data.suikerbuilt.childImageSharp.fluid}
+                src="../images/suikerbuilt-activities.jpg"
+                alt="Suikerbuilt Onverwacht"
               />
             </div>
             <div className="w-full lg:order-1 lg:w-2/6">
@@ -207,38 +212,5 @@ const ActivitiesPage = ({ data }) => {
     </Layout>
   );
 };
-
-export const query = graphql`
-  query {
-    crech: file(name: { eq: "crech-activities" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    recycle: file(name: { eq: "recycle-activities" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    aurial: file(name: { eq: "aurial-activities" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    suikerbuilt: file(name: { eq: "suikerbuilt-activities" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
 
 export default ActivitiesPage;

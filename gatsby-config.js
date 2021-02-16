@@ -6,19 +6,32 @@ const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
     title: `RJ Tours`,
-    description: `Website for RJ Tours`,
-    author: `@chaddwebdesign`,
+    description: `Wonderful community tour experience in Oudtshoorn with RJ Tours.`,
+    author: `@chaddwebdesign <info@chaddwebdesign>`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require(`tailwindcss`)(tailwindConfig),
+          require(`autoprefixer`),
+          ...(process.env.NODE_ENV === `production`
+            ? [require(`cssnano`)]
+            : []),
+        ],
       },
     },
     // {
@@ -33,18 +46,6 @@ module.exports = {
     //     icon: `src/images/tailwind-icon.png`,
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [
-          require(`tailwindcss`)(tailwindConfig),
-          require(`autoprefixer`),
-          ...(process.env.NODE_ENV === `production`
-            ? [require(`cssnano`)]
-            : []),
-        ],
-      },
-    },
     `gatsby-plugin-offline`,
   ],
 };

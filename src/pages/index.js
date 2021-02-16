@@ -1,20 +1,16 @@
 /* eslint-disable */
-import React from "react";
-import { graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import LeftToRight from "../components/Animations/LeftToRight";
 import RightToLeft from "../components/Animations/RightToLeft";
 
 import Layout from "../components/layout";
 
-import testimonialOne from "../../static/testimonial-1.jpg";
-import testimonialTwo from "../../static/testimonial-2.jpg";
-
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
   return (
     <Layout>
-      {/* HERO SECTION */}
+      {/* HERO */}
 
       <section className="text-gray-700 body-font home-bg">
         <div className="container px-8 py-48 mx-auto lg:px-4">
@@ -42,6 +38,8 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
 
+      {/* INTRO */}
+
       <section className="py-24 text-center text-gray-100 bg-green-400">
         <div className="md:mx-auto md:max-w-4xl">
           <div className="md:mt-8 md:mb-8">
@@ -65,6 +63,9 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </section>
+
+      {/* FEATURES */}
+
       <section className="text-gray-700 bg-gray-100 body-font">
         <div className="container px-5 py-24 mx-auto">
           <h2 className="mb-8 font-semibold text-center text-blue-400 uppercase md:mb-16 md:text-2xl">
@@ -73,9 +74,10 @@ const IndexPage = ({ data }) => {
           <RightToLeft>
             <div className="flex flex-col items-center pb-10 mx-auto mb-10 border-b border-gray-200 lg:w-3/5 sm:flex-row">
               <div className="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:h-32 sm:mr-10">
-                <Img
+                <StaticImage
                   className="w-full h-full overflow-hidden"
-                  fluid={data.crech.childImageSharp.fluid}
+                  src="../images/feature-creche.jpg"
+                  alt="Nomonde Creche"
                 />
               </div>
               <div className="flex-grow mt-6 text-center sm:text-left sm:mt-0">
@@ -115,7 +117,7 @@ const IndexPage = ({ data }) => {
             <div className="flex flex-col items-center pb-10 mx-auto mb-10 border-b border-gray-200 lg:w-3/5 sm:flex-row">
               <div className="flex-grow mt-6 text-center sm:text-left sm:mt-0">
                 <h2 className="mb-2 text-lg font-medium text-gray-900 title-font">
-                  Discover Suikerbult ‘Ghetto’ Community
+                  Discover Suikerbuilt ‘Ghetto’ Community
                 </h2>
                 <p className="text-base leading-relaxed">
                   A historic, little populated and developing area. A
@@ -145,9 +147,10 @@ const IndexPage = ({ data }) => {
                 </Link>
               </div>
               <div className="inline-flex items-center justify-center flex-shrink-0 order-first w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:order-none sm:h-32 sm:ml-10">
-                <Img
+                <StaticImage
                   className="w-full h-full overflow-hidden"
-                  fluid={data.suikerbuilt.childImageSharp.fluid}
+                  src="../../images/feature-suikerbuilt.jpg"
+                  alt="Suikerbuilt Community"
                 />
               </div>
             </div>
@@ -155,9 +158,10 @@ const IndexPage = ({ data }) => {
           <RightToLeft>
             <div className="flex flex-col items-center pb-10 mx-auto mb-10 border-b border-gray-200 lg:w-3/5 sm:flex-row">
               <div className="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:h-32 sm:mr-10">
-                <Img
+                <StaticImage
                   className="w-full h-full overflow-hidden"
-                  fluid={data.highschool.childImageSharp.fluid}
+                  src="../images/feature-highschool.jpg"
+                  alt="Aurial College"
                 />
               </div>
               <div className="flex-grow mt-6 text-center sm:text-left sm:mt-0">
@@ -225,15 +229,18 @@ const IndexPage = ({ data }) => {
                 </Link>
               </div>
               <div className="inline-flex items-center justify-center flex-shrink-0 order-first w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:order-none sm:h-32 sm:ml-10">
-                <Img
+                <StaticImage
                   className="w-full h-full overflow-hidden"
-                  fluid={data.recycle.childImageSharp.fluid}
+                  src="../images/feature-recycle.jpg"
                 />
               </div>
             </div>
           </LeftToRight>
         </div>
       </section>
+
+      {/* TESTIMONIALS */}
+
       <section className="text-gray-900 bg-blue-400 body-font">
         <div className="container px-5 py-24 mx-auto">
           <h2 className="mb-8 font-semibold text-center text-gray-100 uppercase md:mb-16 md:text-2xl">
@@ -257,10 +264,10 @@ const IndexPage = ({ data }) => {
                   try-hard pabst authentic iceland.
                 </p>
                 <a className="inline-flex items-center">
-                  <img
-                    alt="testimonial"
-                    src={testimonialOne}
+                  <StaticImage
                     className="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full"
+                    src="../../static/testimonial-1.jpg"
+                    alt="Testimonial One"
                   />
                   <span className="flex flex-col flex-grow pl-4">
                     <span className="font-medium text-gray-900 title-font">
@@ -288,10 +295,10 @@ const IndexPage = ({ data }) => {
                   try-hard pabst authentic iceland.
                 </p>
                 <a className="inline-flex items-center">
-                  <img
-                    alt="testimonial"
-                    src={testimonialTwo}
+                  <StaticImage
                     className="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full"
+                    src="../../static/testimonial-2.jpg"
+                    alt="Testimonial Two"
                   />
                   <span className="flex flex-col flex-grow pl-4">
                     <span className="font-medium text-gray-900 title-font">
@@ -308,52 +315,5 @@ const IndexPage = ({ data }) => {
     </Layout>
   );
 };
-
-export const query = graphql`
-  query {
-    test: file(name: { eq: "test-image" }) {
-      childImageSharp {
-        fluid(maxWidth: 1440) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    right: file(name: { eq: "recycling-center" }) {
-      childImageSharp {
-        fluid(maxWidth: 1440) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    crech: file(name: { eq: "feature-crech" }) {
-      childImageSharp {
-        fluid(maxWidth: 1440) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    suikerbuilt: file(name: { eq: "feature-suikerbuilt" }) {
-      childImageSharp {
-        fluid(maxWidth: 1440) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    highschool: file(name: { eq: "feature-highschool" }) {
-      childImageSharp {
-        fluid(maxWidth: 1440) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    recycle: file(name: { eq: "feature-recycle" }) {
-      childImageSharp {
-        fluid(maxWidth: 1440) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
 
 export default IndexPage;
