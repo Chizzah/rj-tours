@@ -1,4 +1,5 @@
 /* eslint-disable */
+import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
@@ -59,31 +60,24 @@ const AboutPage = () => {
             365 days of beautiful weather in the Oudsthoorn area.
           </p>
         </div>
-        <div>
-          <StaticImage
-            className="h-96"
-            src="../images/suikerbuilt.jpg"
-            alt="Suikerbuilt Community"
-          />
-        </div>
         <div className="flex items-center justify-center">
           <div className="w-1/3">
             <StaticImage
-              className="h-96"
+              placeholder="blurred"
               src="../images/creche.jpg"
               alt="Nomonde Creche"
             />
           </div>
           <div className="w-1/3">
             <StaticImage
-              className="h-96"
+              placeholder="blurred"
               src="../images/aurial-school.jpg"
               alt="Aurial College"
             />
           </div>
           <div className="w-1/3">
             <StaticImage
-              className="h-96"
+              placeholder="blurred"
               src="../images/recycling-center.jpg"
               alt="Recycling Center"
             />

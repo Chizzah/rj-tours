@@ -1,4 +1,5 @@
 /* eslint-disable */
+import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import FadeIntoView from "../components/Animations/FadeIntoView";
@@ -28,6 +29,7 @@ const ActivitiesPage = () => {
           <div className="flex flex-col items-center justify-center text-gray-100 bg-green-500 lg:py-0 lg:flex-row">
             <div className="w-full lg:w-4/6">
               <StaticImage
+                placeholder="blurred"
                 className="object-cover"
                 src="../images/creche-activities.jpg"
                 alt="Nomonde Creche"
@@ -71,6 +73,7 @@ const ActivitiesPage = () => {
           <div className="flex flex-col items-center justify-center lg:py-0 lg:flex-row">
             <div className="w-full lg:order-2 lg:w-4/6">
               <StaticImage
+                placeholder="blurred"
                 className="object-cover"
                 src="../images/recycle-activities.jpg"
                 alt="Rassouw Recycling"
@@ -118,6 +121,7 @@ const ActivitiesPage = () => {
           <div className="flex flex-col items-center justify-center bg-gray-300 lg:py-0 lg:flex-row">
             <div className="w-full lg:w-4/6">
               <StaticImage
+                placeholder="blurred"
                 className="object-cover"
                 src="../images/aurial-activities.jpg"
                 alt="Aurial College"
@@ -170,6 +174,7 @@ const ActivitiesPage = () => {
           <div className="flex flex-col items-center justify-center text-gray-100 bg-blue-400 lg:py-0 lg:flex-row">
             <div className="w-full lg:order-2 lg:w-4/6">
               <StaticImage
+                placeholder="blurred"
                 className="object-cover"
                 src="../images/suikerbuilt-activities.jpg"
                 alt="Suikerbuilt Onverwacht"

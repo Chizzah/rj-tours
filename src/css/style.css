@@ -23,7 +23,7 @@
 }
 
 .home-bg {
-  background-image: url("../../static/hero-image.jpg");
+  background-image: url("../images/hero-image.jpg");
   background-size: cover;
   background-position: 50% 20%;
   background-repeat: no-repeat;

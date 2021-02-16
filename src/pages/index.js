@@ -1,4 +1,5 @@
 /* eslint-disable */
+import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -75,6 +76,7 @@ const IndexPage = () => {
             <div className="flex flex-col items-center pb-10 mx-auto mb-10 border-b border-gray-200 lg:w-3/5 sm:flex-row">
               <div className="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:h-32 sm:mr-10">
                 <StaticImage
+                  placeholder="blurred"
                   className="w-full h-full overflow-hidden"
                   src="../images/feature-creche.jpg"
                   alt="Nomonde Creche"
@@ -148,8 +150,9 @@ const IndexPage = () => {
               </div>
               <div className="inline-flex items-center justify-center flex-shrink-0 order-first w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:order-none sm:h-32 sm:ml-10">
                 <StaticImage
+                  placeholder="blurred"
                   className="w-full h-full overflow-hidden"
-                  src="../../images/feature-suikerbuilt.jpg"
+                  src="../images/feature-suikerbuilt.jpg"
                   alt="Suikerbuilt Community"
                 />
               </div>
@@ -159,6 +162,7 @@ const IndexPage = () => {
             <div className="flex flex-col items-center pb-10 mx-auto mb-10 border-b border-gray-200 lg:w-3/5 sm:flex-row">
               <div className="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:h-32 sm:mr-10">
                 <StaticImage
+                  placeholder="blurred"
                   className="w-full h-full overflow-hidden"
                   src="../images/feature-highschool.jpg"
                   alt="Aurial College"
@@ -230,6 +234,7 @@ const IndexPage = () => {
               </div>
               <div className="inline-flex items-center justify-center flex-shrink-0 order-first w-20 h-20 overflow-hidden text-indigo-500 bg-indigo-100 rounded-full sm:w-32 sm:order-none sm:h-32 sm:ml-10">
                 <StaticImage
+                  placeholder="blurred"
                   className="w-full h-full overflow-hidden"
                   src="../images/feature-recycle.jpg"
                 />
@@ -265,8 +270,9 @@ const IndexPage = () => {
                 </p>
                 <a className="inline-flex items-center">
                   <StaticImage
+                    placeholder="blurred"
                     className="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full"
-                    src="../../static/testimonial-1.jpg"
+                    src="../images/testimonial-1.jpg"
                     alt="Testimonial One"
                   />
                   <span className="flex flex-col flex-grow pl-4">
@@ -296,8 +302,9 @@ const IndexPage = () => {
                 </p>
                 <a className="inline-flex items-center">
                   <StaticImage
+                    placeholder="blurred"
                     className="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full"
-                    src="../../static/testimonial-2.jpg"
+                    src="../images/testimonial-2.jpg"
                     alt="Testimonial Two"
                   />
                   <span className="flex flex-col flex-grow pl-4">
