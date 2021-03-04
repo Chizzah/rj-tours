@@ -237,6 +237,7 @@ const IndexPage = () => {
                   placeholder="blurred"
                   className="w-full h-full overflow-hidden"
                   src="../images/feature-recycle.jpg"
+                  alt="Rassouw Recycling"
                 />
               </div>
             </div>
