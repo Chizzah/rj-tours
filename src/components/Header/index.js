@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <Navbar bgColor="bg-white" textColor="text-gray-900">
       <Navbar.Brand href="/">
-        <img className="w-16" src={Logo} />
+        <img className="w-8 lg:w-8 xl:w-12 2xl:w-16" src={Logo} />
       </Navbar.Brand>
       <Navbar.Toggler toggle={toggle} />
       <Navbar.Collapse isOpen={isOpen}>
@@ -42,7 +42,7 @@ export default Header;
 /* Navbar logic */
 const Navbar = ({ bgColor, textColor, children }) => (
   <nav
-    className={`${bgColor} ${textColor} container mx-auto font-light text-white md:relative md:items-center py-2 px-4 md:flex md:flex-row md:justify-start`}
+    className={`${bgColor} ${textColor} container mx-auto font-light text-white md:relative md:flex py-2 px-4 items-center md:justify-start`}
   >
     {children}
   </nav>

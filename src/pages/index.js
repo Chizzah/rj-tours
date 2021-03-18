@@ -280,7 +280,9 @@ const IndexPage = () => {
                     <span className="font-medium text-gray-900 title-font">
                       Matthew Stalmeester
                     </span>
-                    <span className="text-sm text-gray-500">UI DEVELOPER</span>
+                    <span className="text-sm text-gray-500 uppercase">
+                      Oudtshoorn Resident
+                    </span>
                   </span>
                 </a>
               </div>
@@ -314,7 +316,9 @@ const IndexPage = () => {
                     <span className="font-medium text-gray-900 title-font">
                       Stephan Penderis
                     </span>
-                    <span className="text-sm text-gray-500">DESIGNER</span>
+                    <span className="text-sm text-gray-500 uppercase">
+                      Oudtshoorn Resident
+                    </span>
                   </span>
                 </a>
               </div>
