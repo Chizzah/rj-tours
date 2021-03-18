@@ -14,24 +14,22 @@ const IndexPage = () => {
       {/* HERO */}
 
       <section className="text-gray-700 body-font home-bg">
-        <div className="container px-8 py-48 mx-auto lg:px-4">
-          <div className="flex flex-col w-full mb-12 text-left lg:text-center lg:mt-24">
-            <h2 className="mb-1 text-sm font-bold tracking-widest text-gray-100 uppercase title-font">
+        <div className="container flex flex-col items-center justify-center w-full h-full px-8 py-16 mx-auto">
+          <div className="flex flex-col items-center justify-center w-full h-full mb-12 text-left lg:text-center 2xl:mt-24">
+            <h2 className="mt-24 mb-1 text-xs font-bold tracking-widest text-gray-100 uppercase 2xl:text-lg title-font">
               Enrich the experience
             </h2>
-            <h1 className="mb-6 text-2xl font-semibold tracking-tighter text-gray-100 uppercase sm:text-4xl title-font">
-              Community tours <br className="md:hidden" /> in Oudtshoorn.
+            <h1 className="mb-6 text-lg font-semibold tracking-tighter text-gray-100 uppercase sm:text-4xl title-font">
+              Community tours in Oudtshoorn.
             </h1>
-            <p className="mx-auto text-base font-medium leading-relaxed text-gray-100 lg:text-lg lg:w-2/3">
+            <p className="mx-auto text-xs font-normal leading-relaxed text-center text-gray-100 lg:text-lg 2xl:text-xl lg:w-2/3">
               RJ Tours, the operational sole trader located in the heart of the
               Klein Karoo. A local socially responsible Footprint Tour,
               providing guests the opportunity to meet and interact with the
               local community from an inspirational footprint tour.
             </p>
-          </div>
-          <div className="flex lg:justify-center">
             <Link to="/contact">
-              <button className="flex items-center px-6 py-3 mt-auto text-lg font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
+              <button className="flex items-center px-6 py-3 mt-4 text-xs font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl 2xl:text-2xl sm:mt-8 bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
                 Book Now
               </button>
             </Link>
@@ -44,7 +42,7 @@ const IndexPage = () => {
       <section className="py-24 text-center text-gray-100 bg-green-400">
         <div className="md:mx-auto md:max-w-4xl">
           <div className="md:mt-8 md:mb-8">
-            <h2 className="mb-8 font-semibold capitalize md:mb-16 md:text-2xl">
+            <h2 className="mb-8 font-semibold uppercase md:mb-16 md:text-2xl">
               Enrich the experience
             </h2>
             <p className="mx-4 mb-4 md:mb-8">
@@ -264,21 +262,23 @@ const IndexPage = () => {
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
                 <p className="mb-6 leading-relaxed">
-                  Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                  carry neutra before they sold out fixie 90's microdosing.
-                  Tacos pinterest fanny pack venmo, post-ironic heirloom
-                  try-hard pabst authentic iceland.
+                  Utmost professionalism! Well structured and very informative
+                  tour. Such an eye opening experience, from all the sites we
+                  had visited to the moment our tour had ended. Never in my life
+                  I would have thought that the different communities in the
+                  townships of Oudtshoorn were and still are experiencing these
+                  heartbreaking circumstances.
                 </p>
                 <a className="inline-flex items-center">
                   <StaticImage
                     placeholder="blurred"
                     className="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full"
-                    src="../images/testimonial-1.jpg"
+                    src="../images/matthew_testimonial.jpg"
                     alt="Testimonial One"
                   />
                   <span className="flex flex-col flex-grow pl-4">
                     <span className="font-medium text-gray-900 title-font">
-                      Holden Caulfield
+                      Matthew Stalmeester
                     </span>
                     <span className="text-sm text-gray-500">UI DEVELOPER</span>
                   </span>
@@ -296,21 +296,23 @@ const IndexPage = () => {
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
                 <p className="mb-6 leading-relaxed">
-                  Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                  carry neutra before they sold out fixie 90's microdosing.
-                  Tacos pinterest fanny pack venmo, post-ironic heirloom
-                  try-hard pabst authentic iceland.
+                  My name is Stephan Penderis and I would just like to share my
+                  experience that I had on a tour through some of the outer
+                  parts of Oudtshoorn with Roydin. I will start off by saying
+                  that I felt welcomed and comfortable right of the bat till the
+                  end of our journey. This was definitely worth my time and I
+                  can recommend anyone to sign up for a tour.
                 </p>
                 <a className="inline-flex items-center">
                   <StaticImage
                     placeholder="blurred"
                     className="flex-shrink-0 object-cover object-center w-12 h-12 rounded-full"
-                    src="../images/testimonial-2.jpg"
+                    src="../images/stephan_testimonial.jpg"
                     alt="Testimonial Two"
                   />
                   <span className="flex flex-col flex-grow pl-4">
                     <span className="font-medium text-gray-900 title-font">
-                      Alper Kamu
+                      Stephan Penderis
                     </span>
                     <span className="text-sm text-gray-500">DESIGNER</span>
                   </span>

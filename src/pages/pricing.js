@@ -102,7 +102,13 @@ const PricingPage = () => {
             forget your camera to capture the iconic memorable moments.
           </p>
           <p className="mb-2 md:mb-4">
-            <strong>Summer Times Slots:</strong> 08:00/10:30 & 11:00/13:30
+            <strong>Summer:</strong> September - April
+          </p>
+          <p className="mb-2 md:mb-4">
+            <strong>Summer Times Slots:</strong> May - August
+          </p>
+          <p className="mb-2 md:mb-4">
+            <strong>Winter:</strong> 09:00/11:30 & 12:00/14:30
           </p>
           <p className="mb-2 md:mb-4">
             <strong>Winter Time Slots:</strong> 09:00/11:30 & 12:00/14:30

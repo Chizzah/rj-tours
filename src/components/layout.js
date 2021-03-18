@@ -1,24 +1,24 @@
 /* eslint-disable */
 import PropTypes from "prop-types";
 import React from "react";
-import Footer from "./Footer";
 
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
-	return (
-		<>
-			<div className="site">
-				<Header />
-				<main className="site-content">{children}</main>
-				<Footer />
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div className="site">
+        <Header />
+        <main className="site-content">{children}</main>
+        <Footer />
+      </div>
+    </>
+  );
 };
 
 Layout.propTypes = {
-	children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
