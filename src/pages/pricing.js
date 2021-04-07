@@ -19,8 +19,8 @@ const PricingPage = () => {
 
       {/* PRICING SECTION */}
 
-      <section className="text-gray-700 body-font">
-        <div className="container px-8 pt-32 mx-auto lg:px-4">
+      <section className="container mx-auto mt-16 text-gray-700 border border-gray-100 border-solid shadow-sm body-font">
+        <div className="container p-8 mx-auto lg:px-4">
           <div className="flex flex-wrap text-center">
             <div className="px-8 py-6 mx-auto lg:px-20 lg:w-1/3 md:w-full">
               <h2 className="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">
@@ -105,10 +105,10 @@ const PricingPage = () => {
             <strong>Summer:</strong> September - April
           </p>
           <p className="mb-2 md:mb-4">
-            <strong>Summer Times Slots:</strong> May - August
+            <strong>Summer Times Slots:</strong> 08:00/10:30 & 11:00/13:30
           </p>
           <p className="mb-2 md:mb-4">
-            <strong>Winter:</strong> 09:00/11:30 & 12:00/14:30
+            <strong>Winter:</strong> May - August
           </p>
           <p className="mb-2 md:mb-4">
             <strong>Winter Time Slots:</strong> 09:00/11:30 & 12:00/14:30

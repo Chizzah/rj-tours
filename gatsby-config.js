@@ -1,7 +1,7 @@
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config.js");
+// const resolveConfig = require("tailwindcss/resolveConfig");
+// const tailwindConfig = require("./tailwind.config.js");
 
-const fullConfig = resolveConfig(tailwindConfig);
+// const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
@@ -22,18 +22,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [
-          require(`@tailwindcss/jit`)(tailwindConfig),
-          require(`autoprefixer`),
-          ...(process.env.NODE_ENV === `production`
-            ? [require(`cssnano`)]
-            : []),
-        ],
-      },
-    },
+    `gatsby-plugin-postcss`,
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
