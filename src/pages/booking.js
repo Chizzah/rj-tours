@@ -2,15 +2,13 @@ import React from "react";
 
 import Layout from "../components/layout";
 
-const booking_form_api = process.env.GATSBY_BOOKING_FORM_API;
-
 export default function Booking() {
   return (
     <Layout>
       <section className="py-8 text-xs lg:text-sm lg:py-16">
         <form
           className="w-8/12 p-8 mx-auto border border-gray-400 border-solid rounded-3xl lg:w-1/2 2xl:w-1/3"
-          action={booking_form_api}
+          action={`${process.env.GATSBY_BOOKING_FORM_API}`}
           method="POST"
         >
           <h1 className="mb-8 text-xl font-semibold text-center uppercase lg:text-2xl">
