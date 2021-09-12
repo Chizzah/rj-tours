@@ -28,7 +28,7 @@ const IndexPage = () => {
               providing guests the opportunity to meet and interact with the
               local community from an inspirational footprint tour.
             </p>
-            <Link to="/contact">
+            <Link to="/booking">
               <button className="flex items-center px-6 py-3 mt-4 text-xs font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl 2xl:text-2xl sm:mt-8 bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
                 Book Now
               </button>

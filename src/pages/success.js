@@ -8,7 +8,7 @@ export default function Success() {
     <Layout>
       <div className="flex flex-col items-center justify-center w-full h-[75vh] px-4">
         <h1 className="text-xl font-semibold text-center uppercase lg:text-2xl">
-          Booking sent successfully!
+          Form successfully submitted!
         </h1>
         <p className="my-4 text-xs text-center lg:text-sm">
           Thank you for booking with RJ Tours. We will be in{" "}
@@ -23,7 +23,7 @@ export default function Success() {
           <Link to="/contact" className="text-blue-600 underline">
             contact page
           </Link>{" "}
-          for any queries.
+          for any additional queries.
         </p>
       </div>
     </Layout>

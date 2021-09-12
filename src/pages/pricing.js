@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from "react";
+import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 
@@ -38,9 +39,11 @@ const PricingPage = () => {
                   R310
                 </h2>
               </div>
-              <button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-black duration-500 ease-in-out transform bg-white border rounded-lg shadow-xl transittion hover:text-white hover:bg-black hover:border-black focus:shadow-outline focus:outline-none">
-                Book Now
-              </button>
+              <Link to="/booking">
+                <button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-black duration-500 ease-in-out transform bg-white border rounded-lg shadow-xl transittion hover:text-white hover:bg-black hover:border-black focus:shadow-outline focus:outline-none">
+                  Book Now
+                </button>
+              </Link>
             </div>
             <div className="px-8 py-6 mx-auto lg:px-20 lg:w-1/3 md:w-full">
               <h2 className="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">
@@ -58,9 +61,11 @@ const PricingPage = () => {
                   R270
                 </h2>
               </div>
-              <button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-black duration-500 ease-in-out transform bg-white border rounded-lg shadow-xl transittion hover:text-white hover:bg-black hover:border-black focus:shadow-outline focus:outline-none">
-                Book Now
-              </button>
+              <Link to="/booking">
+                <button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-black duration-500 ease-in-out transform bg-white border rounded-lg shadow-xl transittion hover:text-white hover:bg-black hover:border-black focus:shadow-outline focus:outline-none">
+                  Book Now
+                </button>
+              </Link>
             </div>
             <div className="px-8 py-6 mx-auto lg:px-20 lg:w-1/3 md:w-full">
               <h2 className="mb-3 text-lg font-semibold text-gray-700 lg:text-2xl title-font">
@@ -78,9 +83,11 @@ const PricingPage = () => {
                   R410
                 </h2>
               </div>
-              <button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
-                Book Now
-              </button>
+              <Link to="/booking">
+                <button className="flex items-center px-4 py-2 mx-auto mt-auto font-semibold text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-gradient-to-r from-blue-700 hover:from-blue-600 to-blue-600 hover:to-blue-700 hover:-translate-y-1 hover:scale-110 focus:shadow-outline focus:outline-none">
+                  Book Now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
