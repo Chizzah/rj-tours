@@ -7,70 +7,87 @@ export default function Booking() {
     <Layout>
       <section className="py-8 text-xs lg:text-sm lg:py-16">
         <form
-          className="w-8/12 p-8 mx-auto border border-gray-400 border-solid rounded-3xl lg:w-1/2 2xl:w-1/3"
-          action={`${process.env.GATSBY_BOOKING_FORM_API}`}
+          className="w-11/12 p-8 mx-auto border border-gray-400 border-solid rounded-3xl lg:w-8/12 2xl:w-1/3"
+          action={process.env.GATSBY_BOOKING_FORM_API}
           method="POST"
         >
           <h1 className="mb-8 text-xl font-semibold text-center uppercase lg:text-2xl">
             Booking your experience today!
           </h1>
-          <input type="hidden" name="_template" value="box" />
           <input className="hidden" type="text" name="_honey" />
+          <input
+            className="hidden"
+            type="hidden"
+            name="_template"
+            value="box"
+          />
+          <input
+            className="hidden"
+            type="hidden"
+            name="_next"
+            value={`${process.env.GATSBY_SITE_URL}/success`}
+          />
+          <input
+            className="hidden"
+            type="hidden"
+            name="_url"
+            value={`${process.env.GATSBY_SITE_URL}/booking`}
+          />
           <div className="flex flex-col">
-            <div className="flex items-center space-x-4 justify-evenly">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-4">
               <input
-                className="w-1/2 my-2 text-xs rounded-full lg:text-sm"
+                className="w-full my-2 text-xs rounded-full lg:text-sm"
                 type="text"
                 name="firstName"
                 placeholder="First Name"
                 required
               />
               <input
-                className="w-1/2 my-2 text-xs rounded-full lg:text-sm"
+                className="w-full my-2 text-xs rounded-full lg:text-sm"
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
                 required
               />
             </div>
-            <div className="flex items-center space-x-4 justify-evenly">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-4">
               <input
-                className="w-1/2 my-2 text-xs rounded-full lg:text-sm"
+                className="w-full my-2 text-xs rounded-full lg:text-sm"
                 type="date"
                 name="date"
                 placeholder="Date"
                 required
               />
               <input
-                className="w-1/2 my-2 text-xs rounded-full lg:text-sm"
+                className="w-full my-2 text-xs rounded-full lg:text-sm"
                 type="time"
                 name="time"
                 placeholder="Time"
                 required
               />
             </div>
-            <div className="flex items-center space-x-4 justify-evenly">
+            <div className="grid grid-cols-2 gap-x-2 md:grid-cols-4 md:gap-x-4">
               <input
-                className="w-1/4 my-2 text-xs rounded-full lg:text-sm"
+                className="w-full my-2 text-xs rounded-full lg:text-sm"
                 type="number"
                 name="adults"
                 placeholder="Adults"
                 required
               />
               <input
-                className="w-1/4 my-2 text-xs rounded-full lg:text-sm"
+                className="w-full my-2 text-xs rounded-full lg:text-sm"
                 type="number"
                 name="children"
                 placeholder="Children"
               />
               <input
-                className="w-1/4 my-2 text-xs rounded-full lg:text-sm"
+                className="w-full my-2 text-xs rounded-full lg:text-sm"
                 type="number"
                 name="childrenUnder3"
                 placeholder="Children (< 3)"
               />
               <input
-                className="w-1/4 my-2 text-xs rounded-full lg:text-sm"
+                className="w-full my-2 text-xs rounded-full lg:text-sm"
                 type="number"
                 name="groups"
                 placeholder="Groups"
@@ -81,7 +98,7 @@ export default function Booking() {
             <h2 className="my-4 text-sm font-semibold underline lg:text-base">
               Please read the privacy policy of RJ Tours:
             </h2>
-            <ul className="2xl:ml-4">
+            <ul className="ml-4">
               <li className="py-1 list-disc">
                 48 hours notice to make a booking.
               </li>
@@ -98,7 +115,7 @@ export default function Booking() {
             <h2 className="my-4 text-sm font-semibold underline lg:text-base">
               Cancellation Policy
             </h2>
-            <ul className="2xl:ml-4">
+            <ul className="ml-4">
               <li className="py-1 list-disc">
                 Please note cancellation will incur a cancellation
               </li>
@@ -127,12 +144,15 @@ export default function Booking() {
                 name="declaration"
                 required
               />
-              <span className="ml-4">
+              <span className="ml-2 lg:ml-4">
                 I agree to the full terms of RJ Tours privacy policy.
               </span>
             </label>
           </div>
-          <button className="w-full py-2 mt-8 font-semibold text-white uppercase bg-green-600 border-0 rounded-full lg:text-lg focus:outline-none hover:bg-green-500">
+          <button
+            type="submit"
+            className="w-full py-2 mt-8 font-semibold text-white uppercase bg-green-600 border-0 rounded-full lg:text-lg focus:outline-none hover:bg-green-500"
+          >
             Book Now
           </button>
         </form>

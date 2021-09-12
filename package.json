@@ -4,6 +4,7 @@
   "version": "4.0.0",
   "author": "Taylor Bryant <taylor@bryant.io>",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "framer-motion": "^4.1.2",
     "gatsby": "^3.13.0",
     "gatsby-plugin-image": "^1.2.0",
