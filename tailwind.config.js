@@ -24,7 +24,7 @@ module.exports = {
       textColor: ["active"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
