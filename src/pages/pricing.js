@@ -112,13 +112,13 @@ const PricingPage = () => {
             <strong>Summer:</strong> September - April
           </p>
           <p className="mb-2 md:mb-4">
-            <strong>Summer Times Slots:</strong> 08:00/10:30 & 11:00/13:30
+            <strong>Summer Times Slots:</strong> 08:00 - 10:30 & 11:00 - 13:30
           </p>
           <p className="mb-2 md:mb-4">
             <strong>Winter:</strong> May - August
           </p>
           <p className="mb-2 md:mb-4">
-            <strong>Winter Time Slots:</strong> 09:00/11:30 & 12:00/14:30
+            <strong>Winter Time Slots:</strong> 09:00 - 11:30 & 12:00 - 14:30
           </p>
         </div>
         <div className="container px-8 pt-16 mx-auto lg:px-4">
@@ -132,10 +132,10 @@ const PricingPage = () => {
             Suikerbult & Recycling @ less 15% discount
           </p>
           <p className="mb-2 md:mb-4">
-            <strong>Time Slot One:</strong> 09h00 - 10h30
+            <strong>Time Slot One:</strong> 09:00 - 10:30
           </p>
           <p className="mb-2 md:mb-4">
-            <strong>Time Slot Two:</strong> 11h00 – 12h30
+            <strong>Time Slot Two:</strong> 11:00 – 12:30
           </p>
         </div>
         <div className="container px-8 pt-16 pb-32 mx-auto lg:px-4">

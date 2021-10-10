@@ -22,7 +22,7 @@ const IndexPage = () => {
             <h1 className="mb-6 text-lg font-semibold tracking-tighter text-gray-100 uppercase sm:text-4xl title-font">
               Community tours in Oudtshoorn.
             </h1>
-            <p className="mx-auto text-xs font-normal leading-relaxed text-center text-gray-100 lg:text-lg 2xl:text-xl lg:w-2/3">
+            <p className="mx-auto text-xs font-medium leading-relaxed text-center text-gray-100 lg:text-lg 2xl:text-xl lg:w-2/3">
               RJ Tours, the operational sole trader located in the heart of the
               Klein Karoo. A local socially responsible Footprint Tour,
               providing guests the opportunity to meet and interact with the

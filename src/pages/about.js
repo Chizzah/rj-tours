@@ -27,7 +27,7 @@ const AboutPage = () => {
           </h1>
           <p className="mb-4">
             Roydin John Engelbrecht is responsible for every aspect of your
-            experience with RJ.Tours is pleasing. He has been a guide for 7
+            experience with RJ Tours is pleasing. He has been a guide for 7
             years and worked at a Game lodge and wildelife ranger.
           </p>
 
@@ -48,13 +48,13 @@ const AboutPage = () => {
             tourists to a whole new side of Oudtshoorn area, and with RJ Tours
             he would really like to do that. The slogan of his business says
             "RJ.Tours -Oudsthoorn Flo...let's Go!!! Giving tourists a chance to
-            see Oudtshoorn in a whole different way,but also learn and educate
+            see Oudtshoorn in a whole different way, but also learn and educate
             the forthcoming generation.
           </p>
 
           <p className="mb-4">
-            Tourust will fell safe,learn other cultures,feel part of the
-            community,professional guide,punctuality.
+            Tourists will feel safe, learn about other cultures, feel part of
+            the community, professional guide, punctuality.
           </p>
 
           <p className="mb-4">
